@@ -15,5 +15,35 @@ public interface IAction extends Tree {
    */
   void updatePot();
 
+  /**
+   *Is this IAction a bet?
+   */
+  boolean isBet();
+
+  /**
+   *Is this IAction a check?
+   */
+  boolean isCheck();
+
+  /**
+   *Is this Iaction a call?
+   */
+  boolean isCall();
+
+  /**
+   *Is this IAction a raise?
+   */
+  boolean isRaise();
+
+  /**
+   *is this Fold?
+   */
+  boolean isFold();
+
+  /**
+   * Does this action close the street
+   */
+  boolean closes();
+
 
 }

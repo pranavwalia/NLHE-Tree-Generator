@@ -12,7 +12,7 @@ public interface IPlayer extends Tree {
   /**
    * Returns the action that the Player is responding to.
    */
-  IAction getTrigger();
+  IAction getTrigger() throws IllegalAccessException;
 
 
 }
